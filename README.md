@@ -1,6 +1,18 @@
 # jetson_darknet
 
-git clone https://github.com/katebrighteyes/jetson_darknet
+mkdir weights
+
+cd weights
+
+wget https://pjreddie.com/media/files/yolov2.weights
+
+wget https://pjreddie.com/media/files/yolov3.weights
+
+wget https://pjreddie.com/media/files/yolov3-tiny.weights
+
+wget https://pjreddie.com/media/files/yolov2-tiny.weights
+
+-----------------------------------------------------------------------
 
 ./darknet detector demo cfg/coco.data cfg/yolov3.cfg yolov3.weights ./mov/Driving.mp4 
 
